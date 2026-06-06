@@ -56,3 +56,12 @@ To test this API on your local machine, ensure you have the .NET 10.0 SDK instal
    ```bash
    git clone [https://github.com/yourusername/SecureOpsAPI.git](https://github.com/yourusername/SecureOpsAPI.git)
    cd SecureOpsAPI
+2. **Apply Database Migrations:**
+   Generate the local SQLite database file using Entity Framework.
+       dotnet ef database update
+
+3. **Run the Server:**
+       dotnet run
+
+4. **Test the Endpoints:**
+   Once the server is running, navigate to the provided localhost URL and append `/swagger` (e.g., `http://localhost:5000/swagger`) to access the interactive OpenAPI testing dashboard.
